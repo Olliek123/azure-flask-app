@@ -4,18 +4,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '''
+    return render_template_string('''
         <h1>Hello and welcome to my website!</h1>
-        /about<button>Go to About Page</button></a>
-    '''
+        <a href="/abouto to About Page</button></a>
+    ''')
 
 @app.route('/about')
 def about():
-    return '''
+    return render_template_string('''
         <h1>About Page</h1>
         <p>This is a second page with some extra info.</p>
         /<button>Back to Home</button></a>
-    '''
+    ''')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
