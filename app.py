@@ -7,7 +7,8 @@ def home():
 
 @app.route('/about')
 def about():
-    return "test"
+    return "about"
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/third')
+def third():
+    return "third"
