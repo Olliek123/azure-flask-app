@@ -11,8 +11,4 @@ def about():
 
 @app.route('/index')
 def third():
-    return "Welcome to the index page"
-
-@app.route('/third')
-def third():
-    return "Welcome to the third page"
+    return "Welcome to the index page
