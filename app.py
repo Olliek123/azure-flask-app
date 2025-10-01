@@ -7,8 +7,12 @@ def home():
 
 @app.route('/about')
 def about():
-    return "about"
+    return "Welcome to the about page"
+
+@app.route('/index')
+def third():
+    return "Welcome to the index page"
 
 @app.route('/third')
 def third():
-    return "third"
+    return "Welcome to the third page"
